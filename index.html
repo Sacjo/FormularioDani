@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="d-flex toggled ">
+
+        <!-- Sidebar -->
+        <div class="bg-blacklight border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading divider-dark ">SitioWeb </div>
+            <div class="list-group list-group-flush">
+                <ul class="navbar-nav">
+                    <a href="#" class="list-group-item list-group-item-action bg-blacklight">Inicio</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-blacklight">Formularios</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-blacklight">Elementos</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-blacklight">Calendario</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-blacklight ">Diseños</a>
+                    <div class="divider-dark"></div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper" class="bg-white">
+
+            <nav id="navb" class="navbar navbar-expand-lg bg-blacklight">
+                <button class="btn btn-light" id="menu-toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <div class="navbar navbar-expand-xs ml-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ml-auto ">
+                        <div class="row ">
+                            <div class="col-md-2 ">
+                                <li class="navbar-nav topmargin-xs">
+                                    <a href="#"><ion-icon name="chatbubble-outline" class="icon-light"></ion-icon></a>
+                                </li>
+                            </div>
+                            <div class="col-md-3">
+                                <li class="navbar-nav ">
+                                    <img src="img/dream.JPG" alt="Foto" class="chico">
+                                </li>
+                            </div>
+                            <div class="col-md-2">
+                                <li class="navbar-nav ">
+                                    <a href="#" >Dani Sanchez</a>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container topmargin-sm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Formulario De Validacion</h1>
+                    </div>
+                    <div class="col-md-3 ml-auto ">
+                        <ul class="list-group ">
+                            <li class=" navbar-nav"><input type="text" class="form-control" placeholder="Buscar"></li>
+                            <li class="icon-dark-cente navbar-nav">
+                                <a href="#" class="icon-dark"><ion-icon name="search-outline"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container topmargin-xs borde bg-black">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="container ">
+                            <h4 class="topmargin-xs">Formulario de Validacion</h4>
+                            <div class="divider-dark topmargin-xs"></div>
+                            <h3 class="topmargin-sm">Informacion Personal</h3>
+                            <div class="divider-dark"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-12 ">
+                        <div class="container topmargin-sm bg-grisdark">
+                            <form id="form" method="POST" class="needs-validation cen topmargin-xs " validate>
+                                <div class="form-row ">
+                                    <div class="col-md-12  ">
+                                        <label for="nombre" class="col-md-2">Nombre: </label>
+                                        <input name="nombre" type="text" class="form-control1 col-md-5 " id="nombre" placeholder="Ej: Hernan" required>
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="email" >Email: </label>
+                                        <input name="email" type="email" class="form-control1 col-md-5 " id="email" placeholder="ejemple@gmail.com" value="" required>
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="confemail">Confirmar Email: </label>
+                                        <input name="confemail" type="email" class="form-control1 col-md-5 " id="confemail" placeholder="ejemple@gmail.com" value="" required>
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="numero">Numero Celular: </label>
+                                        <input name="numero" type="text" class="form-control1 col-md-5 " id="numero" placeholder="Ej: 0983123123" value="" required>
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="web">Web: </label>
+                                        <input name="web" type="url" class="form-control1 col-md-5 " id="web" placeholder="www.ejemplo.com" value="" required>
+
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="ocupacion">Ocupacion</label>
+                                        <input name="ocupacion" type="text" class="form-control1 col-md-5 " id="ocupacion" placeholder="Ej: Desarrollador" value="" required>
+
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="contraseña">Contraseña: </label>
+                                        <input name="contraseña" type="password" class="form-control1 col-md-5 " id="contraseña" placeholder="*******" value="" required>
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                    <div class="col-md-12 ">
+                                        <label class="col-md-2" for="confcontraseña">Confirmar: </label>
+                                        <input name="confcontraseña" type="password" class="form-control1 col-md-5 " id="confcontraseña" placeholder="*******" value="" required>
+
+                                        <div class="valid-feedback">Ok valido</div>
+                                        <div class="invalid-feedback">Complete El campo</div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="form-check topmargin-sm ">
+                                        <input type="checkbox" class="form-check-input " value="" id="invalidcheck" required>
+                                        <label for="invalidcheck" class="form-check-label  ">Acepto Terminos y
+                                            Condiciones</label>
+                                        <div class="valid-feedback ">Aceptado</div>
+                                    </div>
+                                    
+                                    <button name="submit" type="submit" id="submit" class="btn btn-transparent topmargin-sm col-md-2">Submit</button>
+                                   
+                                </div>
+                                
+                            </form>
+                            <div class="topmargin-xs"></div>
+                        </div>
+                        <div class="topmargin-sm"></div>
+                    </div>
+                    
+                    
+
+
+
+
+                </div>
+            </div>
+            <section id="footer" class="bg-black">
+                <div class="container topmargin-sm ">
+                    
+                    <ul class="list-inline ">
+                        <li class="list-inline-item"><a href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a></li>
+                        <li class="list-inline-item"><a href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a></li>
+                        <li class="list-inline-item"><a href="#">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a></li>
+                        <li class="list-inline-item"><a href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></li>
+                    </ul>
+                    <small>©2020 All Rights Reserved. Create by Dani Sanchez</small>
+                </div>
+            </section>
+        </div>
+        
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"> </script>
+
+    <script src="main.js"></script>
+
+    <script src="validar.js"></script>
+
+</body>
+
+</html>
